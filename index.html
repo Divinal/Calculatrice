@@ -14,32 +14,35 @@
         </div>
 
         <div class="buttons">
-            <button class="btn-blue" onclick="EffacesTous()">AC</button>
-            <button class="btn-blue" onclick="Touches('(')">(</button>
-            <button class="btn-blue" onclick="Touches(')')">)</button>
-            <button class="btn-blue" onclick="Touches('/')">÷</button>
-            <button class="btn-gray" onclick="Touches('7')">7</button>
-            <button class="btn-gray" onclick="Touches('8')">8</button>
-            <button class="btn-gray" onclick="Touches('9')">9</button>
-            <button class="btn-blue" onclick="Touches('*')">×</button>
-            <button class="btn-gray" onclick="Touches('4')">4</button>
-            <button class="btn-gray" onclick="Touches('5')">5</button>
-            <button class="btn-gray" onclick="Touches('6')">6</button>
-            <button class="btn-blue" onclick="Touches('-')">-</button>
-            <button class="btn-gray" onclick="Touches('1')">1</button>
-            <button class="btn-gray" onclick="Touches('2')">2</button>
-            <button class="btn-gray" onclick="Touches('3')">3</button>
-            <button class="btn-blue" onclick="Touches('+')">+</button>
-            <button class="btn-gray" onclick="Touches('0')">0</button>
-            <button class="btn-gray" onclick="Touches('.')">.</button>
-            <button class="btn-gray" onclick="EffaceDernier()">⌫</button>
-            <button class="btn-white" onclick="Resultat()">=</button>
+            <button class="btn-blue" onclick="clearDisplay()">AC</button>
+            <button class="btn-blue" onclick="appendToDisplay('(')">(</button>
+            <button class="btn-blue" onclick="appendToDisplay(')')">)</button>
+            <button class="btn-blue" onclick="appendToDisplay('/')">÷</button>
+            <button class="btn-gray" onclick="appendToDisplay('7')">7</button>
+            <button class="btn-gray" onclick="appendToDisplay('8')">8</button>
+            <button class="btn-gray" onclick="appendToDisplay('9')">9</button>
+            <button class="btn-blue" onclick="appendToDisplay('*')">×</button>
+            <button class="btn-gray" onclick="appendToDisplay('4')">4</button>
+            <button class="btn-gray" onclick="appendToDisplay('5')">5</button>
+            <button class="btn-gray" onclick="appendToDisplay('6')">6</button>
+            <button class="btn-blue" onclick="appendToDisplay('-')">-</button>
+            <button class="btn-gray" onclick="appendToDisplay('1')">1</button>
+            <button class="btn-gray" onclick="appendToDisplay('2')">2</button>
+            <button class="btn-gray" onclick="appendToDisplay('3')">3</button>
+            <button class="btn-blue" onclick="appendToDisplay('+')">+</button>
+            <button class="btn-gray" onclick="appendToDisplay('0')">0</button>
+            <button class="btn-gray" onclick="appendToDisplay('.')">.</button>
+            <button class="btn-gray" onclick="deleteLast()">⌫</button>
+            <button class="btn-white" onclick="calculateResult()">=</button>
         </div>
+
+        <!-- Fenêtre d'historique flottante -->
         <div id="history-container" class="history-container">
             <h3>Historique</h3>
             <ul id="history"></ul>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
